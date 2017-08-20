@@ -1,0 +1,27 @@
+language: node_js
+node_js:
+  - "4"
+  - "5"
+  - "6"
+  - "7"
+
+cache:
+  directories:
+    - node_modules
+
+install:
+  - npm install
+
+script:
+  - hexo cl
+  - hexo g
+
+after_script:
+  - cd ./public
+  - git init
+  - git add .
+  - git commit -m "Auto build by Travis CI."
+  - git config user.name "giuem"
+  - git config user.email "$GIT_EMAIL"
+  - git push --force --quiet "git@github.com:giuem/blog.git" master:gh-pages
+
