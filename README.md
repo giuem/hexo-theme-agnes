@@ -6,6 +6,8 @@
 
 ![](https://user-images.githubusercontent.com/8272989/29495911-e09a5372-85fa-11e7-9c38-38756953e142.png)
 
+[Preview](https://giuem.github.io/hexo-theme-agnes/)
+
 ## Installation
 
 1. Get theme from GitHub.
@@ -51,13 +53,11 @@ comment:
 
 ``` markdown
 ---
----
 title: Links
 layout: link
 ---
 
 Write someting here.
----
 ```
 
 2. Create a data file in `source/_data/link.yml`. Format looks like this.
