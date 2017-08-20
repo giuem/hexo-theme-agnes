@@ -1,6 +1,5 @@
 language: node_js
 node_js:
-  - "4"
   - "5"
   - "6"
   - "7"
@@ -11,6 +10,7 @@ cache:
 
 install:
   - npm install
+  - git clone https://github.com/giuem/hexo-theme-agnes.git themes/agnes
 
 script:
   - hexo cl
@@ -23,5 +23,5 @@ after_script:
   - git commit -m "Auto build by Travis CI."
   - git config user.name "giuem"
   - git config user.email "$GIT_EMAIL"
-  - git push --force --quiet "git@github.com:giuem/blog.git" master:gh-pages
+  - git push --force --quiet "git@github.com:giuem/hexo-theme-agnes.git" master:gh-pages
 
