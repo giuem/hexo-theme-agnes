@@ -32,5 +32,5 @@ after_script:
   - git commit -m "Auto build by Travis CI."
   - git config user.name "giuem"
   - git config user.email "$GIT_EMAIL"
-  - git push --force --quiet "git@github.com:giuem/hexo-theme-agnes.git" master:gh-pages
+  - git push --force --quiet "https://${GITHUB_TOKEN}@github.com/giuem/hexo-theme-agnes.git" master:gh-pages
 
