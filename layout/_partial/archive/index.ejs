@@ -1,0 +1,25 @@
+<article class="archive page">
+<%
+// page title (same as document title)
+var title;
+if (is_archive()) {
+  title = __('title.archive');
+  if (is_month()) { title += '<span class="meta">' + page.year + '/' + page.month + '</span>'; }
+  else if (is_year()) { title += '<span class="meta">' + page.year + '</span>'; }
+} else if (is_category()) {
+  title = __('title.category') + '<span class="meta">' + page.category + '</span>';
+} else if (is_tag()) {
+  title = __('title.tag') + '<span class="meta">' + page.tag + '</span>';
+}
+%>
+<header class="header">
+  <h1 class="title"><%- title %></h1>
+</header>
+
+
+<% if (is_month() || is_year()) { %>
+  <%- partial('part') %>
+<% } else { %>
+  <%- partial('all') %>
+<% } %>
+</article>

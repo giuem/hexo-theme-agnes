@@ -1,0 +1,9 @@
+<% if (tags && tags.length > 0) { %>
+<section class="tags">
+  <% tags.forEach(function(tag){ %>
+    <a class="tag meta" href="<%- url_for(tag.path) %>">
+      <%= tag.name %>
+    </a>
+  <% }) %>
+</section>
+<% } %>

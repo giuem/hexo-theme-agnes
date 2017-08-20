@@ -1,0 +1,38 @@
+.archive {
+  .meta {
+    display: inline-block;
+    margin: 0 0.5em;
+    color: color-grey;
+    font-size: font-size-normal;
+    font-weight: normal;
+  }
+}
+
+.archive-group {
+  margin-bottom: width-gap-double;
+  .year {
+    font-weight: normal;
+  }
+}
+
+.archive-post {
+  display: flex;
+  align-items: baseline;
+  margin: 0.5em 0 0.5em width-gap;
+  .date {
+    color: color-grey;
+    margin-right: width-gap;
+    flex-shrink: 0;
+    flex-basis: 4.3em;
+  }
+  .title {
+    font-weight: normal;
+    font-size: inherit;
+    color: color-grey;
+    display: inline-block;
+    margin: 0;
+    a:hover {
+      color: color-default;
+    }
+  }
+}

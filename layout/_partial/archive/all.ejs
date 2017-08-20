@@ -1,0 +1,16 @@
+<%
+// sort post by year
+var posts = page.posts.data;
+var data = _.groupBy(posts, function(e) {
+  return e.date.year();
+});
+%>
+
+<% _.forInRight(data, function(posts, year) { %>
+  <section class="archive-group">
+    <h2 class="year"><%= year %></h2>
+    <% posts.forEach(function(post) { %>
+      <%- partial('_partial/post/archive', {post: post}) %>
+    <% }) %>
+  </section>
+<% }) %>

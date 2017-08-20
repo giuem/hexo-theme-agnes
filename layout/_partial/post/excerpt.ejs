@@ -1,0 +1,16 @@
+<article class="post excerpt page">
+  <header class="header">
+    <h2 class="title">
+      <a href="<%- url_for(post.path) %>">
+        <%= post.title %>
+      </a>
+    </h2>
+  </header>
+  <section class="content">
+    <% if (post.excerpt) { %>
+      <%- post.excerpt %>
+    <% } else { %>
+      <p><%- strip_html(post.content).substring(0, 300) %></p>
+    <% } %>
+  </section>
+</article>

@@ -1,0 +1,28 @@
+<% if (is_post()) { %>
+  <% if (page.prev || page.next) { %>
+    <nav class="paginator post">
+    <% if (page.prev){ %>
+      <a class="paginator-prev"
+        href="<%- url_for(page.prev.path) %>"
+        title="<%= page.prev.title %>"
+        rel="prev">&laquo; <%= page.prev.title %></a>
+    <% } %>
+    <% if (page.next){ %>
+      <a class="paginator-next"
+        href="<%- url_for(page.next.path) %>"
+        title="<%= page.next.title %>"
+        rel="next"><%= page.next.title %> &raquo;</a>
+    <% } %>
+    </nav>
+  <% } %>
+<% } else { %>
+  <% if (page.total > 1) { %>
+    <nav class="paginator">
+    <%- paginator({
+      prev_text: '<i class="i-prev"></i>',
+      next_text: '<i class="i-next"></i>',
+      mid_size: 1
+    }) %>
+    </nav>
+  <% } %>
+<% } %>

@@ -1,0 +1,18 @@
+<header class="site-header">
+  <section class="header-wrap container">
+    <% var tilte = theme.title || config.title %>
+    <% var tag = is_home() ? 'h1' : 'div' %>
+    <<%=tag%> class="logo">
+      <a href="<%=url_for(config.root)%>"><%= tilte %></a>
+    </<%=tag%>>
+    <% if (theme.header.nav) { %>
+    <nav class="menu">
+      <ul>
+        <% _.forIn(theme.header.nav, function(link, name){ %>
+          <li><a href="<%= link %>"><%= name %></a></li>
+        <% }) %>
+      </ul>
+    </nav>
+    <% } %>
+  </section>
+</header>

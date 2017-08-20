@@ -1,0 +1,171 @@
+.post {
+  margin-bottom: 3em;
+
+  .content {
+    a:not(.headerlink) {    
+      color: color-link;
+      &:hover {
+        color: color-link-hover;
+        border-color: color-link-hover;
+      }
+      // &:after {
+      //   margin:0 1px;
+      //   .icon-content(icon-link, color-link);
+      // }
+    }
+    .excerpt& > p {
+      color: color-grey;
+      margin: 0;
+      // text ellipsis
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+
+      max-height: (line-height * 3)em;
+      text-overflow: ellipsis;
+    }
+  }
+
+  .footer {
+    margin: 3em 0;
+    font-size: font-size-smaller;
+    .meta {
+      color: color-grey;
+      background: #f2f2f2;
+      padding: 0.25em 0.6em;
+      margin: 0.4em 0;
+      display: inline-block;
+      border-radius: 2px;
+
+      transition: background-color .2s ease;
+    }
+    a.meta:hover {
+      background: #eaeaea;
+      color: darken(color-grey, 50%);
+    }
+
+    .date:before {
+      use-icon-as-content(icon-date, darken(color-grey, 25%));
+    }
+    .tag:before {
+      use-icon-as-content(icon-tag, darken(color-grey, 50%));
+    }
+    .category:before {
+      use-icon-as-content(icon-category, darken(color-grey, 50%));
+    }
+  }
+}
+
+.video-container {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  margin: 0 0 1.75em;
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin-top: 0;
+  }
+}
+
+code {
+  padding: 0.2em 0.4em;
+  border-radius: 2px;
+  background: color-background-code;
+}
+
+.highlight {
+  line-height: 1.5;
+  overflow: auto;
+  margin: 1.2em 0;
+  padding: 1em 0.8em;
+  background: color-background-code;
+  border-radius: 2px;
+  figcaption {
+    margin-top: -0.5em;
+    font-size: font-size-smaller
+    color: color-grey
+    a {
+      float: right;
+    }
+  }
+  table {
+    margin: 0;
+    width: auto;
+    border: none;
+  }
+  td, tr {
+    padding: 0;
+    border: none;
+  }
+  pre {
+    margin: 0;
+  }
+
+  // GitHub Gist Theme
+  // Author : Louis Barranqueiro - https://github.com/LouisBarranqueiro
+  .comment,
+  .meta {
+    color: #969896;
+  }
+
+  .string,
+  .variable,
+  .template-variable,
+  .strong,
+  .emphasis,
+  .quote {
+    color: #df5000;
+  }
+
+  .keyword,
+  .selector-tag,
+  .type {
+    color: #a71d5d;
+  }
+
+  .literal,
+  .symbol,
+  .bullet,
+  .attribute {
+    color: #0086b3;
+  }
+
+  .section,
+  .name {
+    color: #63a35c;
+  }
+
+  .tag {
+    color: #333333;
+  }
+
+  .title,
+  .attr,
+  .selector-id,
+  .selector-class,
+  .selector-attr,
+  .selector-pseudo {
+    color: #795da3;
+  }
+
+  .addition {
+    color: #55a532;
+    background-color: #eaffea;
+  }
+
+  .deletion {
+    color: #bd2c00;
+    background-color: #ffecec;
+  }
+
+  .link {
+    text-decoration: underline;
+  }
+}
+

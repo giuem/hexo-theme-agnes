@@ -1,0 +1,7 @@
+<ul>
+<% _.forIn(items, function(item, name){ %>
+  <li>
+    <a href="<%= item.link %>" rel="external" target="_blank"><%= name %></a>
+  </li>
+<% }) %>
+</ul>

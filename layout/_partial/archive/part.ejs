@@ -1,0 +1,5 @@
+<section class="archive-group">
+<% page.posts.forEach(function(post){ %>
+  <%- partial('_partial/post/archive', {post: post}) %>
+<% }) %>
+</section>

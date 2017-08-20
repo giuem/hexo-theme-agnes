@@ -1,0 +1,14 @@
+<article class="link page">
+  <header class="header">
+    <h1 class="title"><%= post.title %></h1>    
+  </header>
+  <% _.forIn(site.data.link, function(items, groupName){ %>
+  <article class="link-group">
+    <h2 class="link-group-name"><%= groupName %></h2>
+    <%- partial('items', { items: items }) %>
+  </article>
+  <% }) %>
+  <section class="post-content">
+    <%- post.content %>
+  </section>
+</article>

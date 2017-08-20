@@ -1,0 +1,13 @@
+<footer class="site-footer">
+  <section class="footer-wrap container">
+    <p class="copyright">
+      &copy; 
+      <% if (theme.footer.since) { %><%= theme.footer.since %> - <% } %>
+      <%- date(new Date(), 'YYYY') %>
+      <%= config.author %>
+    </p>
+    <p class="powered">
+      Theme Agnes Made with <span class="i-love"></span>
+    </p>
+  </section>
+</footer>

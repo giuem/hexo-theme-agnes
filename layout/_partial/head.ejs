@@ -1,0 +1,65 @@
+<meta charset="UTF-8">
+
+<%
+  var title = page.title;
+  var titleSeparate = theme.head.title_separate ? ' ' + theme.head.title_separate + ' ' : '';
+  if (is_archive()) {
+    title = __('title.archive');
+    if (is_month()) {
+      title += ': ' + page.year + '/' + page.month;
+    } else if (is_year()) {
+      title += ': ' + page.year;
+    }
+  } else if (is_category()) {
+    title = __('title.category') + ': ' + page.category;
+  } else if (is_tag()) {
+    title = __('title.tag') + ': ' + page.tag;
+  }
+%>
+<title>
+<% if (title) { %>
+<%= title + titleSeparate + config.title  %> 
+<% } else { %>
+<%= config.title %>
+<% if (config.subtitle) { %><%= titleSeparate +  config.subtitle %><% } %>
+<% } %>
+</title>
+
+<% if (config.author){ %>
+<meta name="author" content="<%= config.author %>">
+<% } %>
+
+<% if (page.description){ %>
+<meta name="description" content="<%= page.description %>">
+<% } else if (page.excerpt){ %>
+<meta name="description" content="<%= strip_html(page.excerpt).replace(/^\s*/, '').replace(/\s*$/, '') %>">
+<% } else if (page.content){ %>
+<meta name="description" content="<%= strip_html(page.content).replace(/^\s*/, '').replace(/\s*$/, '').substring(0, 200) %>">
+<% } else if (config.description){ %>
+<meta name="description" content="<%= config.description %>">
+<% } %>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="renderer" content="webkit">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+<meta name="applicable-device"content="pc,mobile">
+
+<% if( (page.current === 1) && (is_home()) ) { %>
+<link rel="canonical" href="<%- config.url %>">
+<% } else { %>
+<link rel="canonical" href="<%- config.url + url_for(path) %>">
+<% } %>
+
+<% if (theme.head.favicon) { %>
+<link rel="icon" href="<%- theme.head.favicon %>">
+<% } %>
+
+<% if (theme.head.rss) { %>
+<link rel="alternative" href="<%- theme.head.rss %>" title="<%= config.title %>" type="application/atom+xml">
+<% } %>
+
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+<link rel="stylesheet" href="/css/style.css?t=<%= date(Date.now(), 'YYYYMDHs') %>">

@@ -1,0 +1,15 @@
+<article class="post detail page">
+  <header class="header">
+    <h2 class="title">
+      <%= post.title %>
+    </h2>
+  </header>
+  <section class="content">
+    <%- post.content %>
+  </section>
+  <footer class="footer">
+    <%- partial('components/date', { postDate: post.date }) %>
+    <%- partial('components/category', { categories: post.categories }) %>
+    <%- partial('components/tag', { tags: post.tags	}) %>
+  </footer>
+</article>

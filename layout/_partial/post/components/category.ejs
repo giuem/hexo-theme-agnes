@@ -1,0 +1,9 @@
+<% if (categories && categories.length > 0) { %>
+<section class="categories">
+  <% categories.forEach(function(category){ %>
+    <a class="category meta" href="<%- url_for(category.path) %>">
+      <%= category.name %>
+    </a>
+  <% }) %>
+</section>
+<% } %>

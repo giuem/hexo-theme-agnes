@@ -1,0 +1,16 @@
+head:
+  title_separate: "|"
+  favicon: favicon.ico
+  rss: atom.xml
+
+header:
+  nav:
+    Link: "/link"
+    Archive: "/archives"
+    About: "/about"
+
+footer:
+  since:
+
+comment:
+  disqus:

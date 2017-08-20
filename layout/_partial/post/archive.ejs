@@ -1,0 +1,10 @@
+<article class="archive-post">
+  <time class="date" datetime="<%= date_xml(post.date) %>">
+    <%= date(post.date, 'MMM Do') %>
+  </time>
+  <h3 class="title">
+    <a href="<%- url_for(post.path) %>">
+      <%= post.title %>
+    </a>
+  </h3>
+</article>
