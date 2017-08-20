@@ -18,8 +18,8 @@ install:
   - cd build
   - npm install
 
-before_script:
-  - cd build
+# before_script:
+#   - cd build
 
 script:
   - hexo cl
