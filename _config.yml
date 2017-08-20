@@ -5,9 +5,9 @@ head:
 
 header:
   nav:
-    Link: "/link"
-    Archive: "/archives"
-    About: "/about"
+    Link: "/hexo-theme-agnes/link"
+    Archive: "/hexo-theme-agnes/archives"
+    About: "/hexo-theme-agnes/about"
 
 footer:
   since:
