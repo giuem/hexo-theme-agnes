@@ -3,7 +3,7 @@
     <% var tilte = theme.title || config.title %>
     <% var tag = is_home() ? 'h1' : 'div' %>
     <<%=tag%> class="logo">
-      <a href="<%=url_for(config.root)%>"><%= tilte %></a>
+      <a href="<%= url_for('/') %>"><%= tilte %></a>
     </<%=tag%>>
     <% if (theme.header.nav) { %>
     <nav class="menu">
