@@ -8,9 +8,18 @@ cache:
   directories:
     - node_modules
 
+before_install:
+  - npm install -g hexo-cli
+
 install:
+  - git clone --branch example https://github.com/giuem/hexo-theme-agnes.git build
+  - mkdir -p build/themes/agnes
+  - mv !(build) build/themes/agnes
+  - cd build
   - npm install
-  - git clone https://github.com/giuem/hexo-theme-agnes.git themes/agnes
+
+before_script:
+  - cd build
 
 script:
   - hexo cl
