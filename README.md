@@ -4,7 +4,7 @@
 
 > A minimal hexo theme
 
-![](https://user-images.githubusercontent.com/8272989/29495911-e09a5372-85fa-11e7-9c38-38756953e142.png)
+![logo](https://user-images.githubusercontent.com/8272989/29710205-ec5a8662-89c1-11e7-92e0-3ed09584e8f5.png)
 
 [Preview](https://giuem.github.io/hexo-theme-agnes/)
 
