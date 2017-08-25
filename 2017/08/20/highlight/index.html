@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+
+
+<title>
+
+Highlight | Agnes 
+
+</title>
+
+
+<meta name="author" content="Giuem">
+
+
+
+<meta name="description" content="This post is for highlight.js test.">
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="renderer" content="webkit">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+<meta name="applicable-device"content="pc,mobile">
+
+
+<link rel="canonical" href="https://giuem.github.io/hexo-theme-agnes/hexo-theme-agnes/2017/08/20/highlight/index.html">
+
+
+
+<link rel="icon" href="favicon.ico">
+
+
+
+<link rel="alternative" href="atom.xml" title="Agnes" type="application/atom+xml">
+
+
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+<link rel="stylesheet" href="/hexo-theme-agnes/css/style.css?t=2017825106">
+<link href="https://fonts.googleapis.com/css?family=Manuale" rel="stylesheet">
+
+</head>
+<body class="site">
+  <header class="site-header">
+  <section class="header-wrap container">
+    
+    
+    <div class="logo">
+      <a href="/hexo-theme-agnes/">Agnes</a>
+    </div>
+    
+    <nav class="menu">
+      <ul>
+        
+          <li><a href="/hexo-theme-agnes/link">Link</a></li>
+        
+          <li><a href="/hexo-theme-agnes/archives">Archive</a></li>
+        
+          <li><a href="/hexo-theme-agnes/about">About</a></li>
+        
+      </ul>
+    </nav>
+    
+  </section>
+</header>
+
+  <main class="site-main">
+   <section class="container">
+    
+  <article class="post detail page">
+  <header class="header">
+    <h2 class="title">
+      Highlight
+    </h2>
+  </header>
+  <section class="content">
+    <p>This post is for highlight.js test.<br><a id="more"></a></p>
+<h2 id="C"><a href="#C" class="headerlink" title="C++"></a>C++</h2><figure class="highlight c++"><table><tr><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></div><div class="line"></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">int</span> argc, <span class="keyword">char</span> *argv[])</span> </span>&#123;</div><div class="line"></div><div class="line">  <span class="comment">/* An annoying "Hello World" example */</span></div><div class="line">  <span class="keyword">for</span> (<span class="keyword">auto</span> i = <span class="number">0</span>; i &lt; <span class="number">0xFFFF</span>; i++)</div><div class="line">    <span class="built_in">cout</span> &lt;&lt; <span class="string">"Hello, World!"</span> &lt;&lt; <span class="built_in">endl</span>;</div><div class="line"></div><div class="line">  <span class="keyword">char</span> c = <span class="string">'\n'</span>;</div><div class="line">  <span class="built_in">unordered_map</span> &lt;<span class="built_in">string</span>, <span class="built_in">vector</span>&lt;<span class="built_in">string</span>&gt; &gt; m;</div><div class="line">  m[<span class="string">"key"</span>] = <span class="string">"\\\\"</span>; <span class="comment">// this is an error</span></div><div class="line"></div><div class="line">  <span class="keyword">return</span> <span class="number">-2e3</span> + <span class="number">12l</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h2 id="CSS"><a href="#CSS" class="headerlink" title="CSS"></a>CSS</h2><figure class="highlight css"><table><tr><td class="code"><pre><div class="line">@<span class="keyword">font-face</span> &#123;</div><div class="line">  <span class="attribute">font-family</span>: Chunkfive; <span class="attribute">src</span>: <span class="built_in">url</span>(<span class="string">'Chunkfive.otf'</span>);</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="selector-tag">body</span>, <span class="selector-class">.usertext</span> &#123;</div><div class="line">  <span class="attribute">color</span>: <span class="number">#F0F0F0</span>; <span class="attribute">background</span>: <span class="number">#600</span>;</div><div class="line">  <span class="attribute">font-family</span>: Chunkfive, sans;</div><div class="line">&#125;</div><div class="line"></div><div class="line">@<span class="keyword">import</span> url(print.css);</div><div class="line">@<span class="keyword">media</span> print &#123;</div><div class="line">  <span class="selector-tag">a</span><span class="selector-attr">[href^=http]</span><span class="selector-pseudo">::after</span> &#123;</div><div class="line">    <span class="attribute">content</span>: <span class="built_in">attr</span>(href)</div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h2 id="Diff"><a href="#Diff" class="headerlink" title="Diff"></a>Diff</h2><figure class="highlight diff"><table><tr><td class="code"><pre><div class="line"><span class="comment">Index: languages/ini.js</span></div><div class="line"><span class="comment">===================================================================</span></div><div class="line"><span class="comment">--- languages/ini.js    (revision 199)</span></div><div class="line"><span class="comment">+++ languages/ini.js    (revision 200)</span></div><div class="line"><span class="meta">@@ -1,8 +1,7 @@</span></div><div class="line"> hljs.LANGUAGES.ini =</div><div class="line"> &#123;</div><div class="line">   case_insensitive: true,</div><div class="line"><span class="deletion">-  defaultMode:</span></div><div class="line"><span class="deletion">-  &#123;</span></div><div class="line"><span class="addition">+  defaultMode: &#123;</span></div><div class="line">     contains: ['comment', 'title', 'setting'],</div><div class="line">     illegal: '[^\\s]'</div><div class="line">   &#125;,</div><div class="line"></div><div class="line"><span class="comment">*** /path/to/original timestamp</span></div><div class="line"><span class="comment">--- /path/to/new      timestamp</span></div><div class="line"><span class="comment">***************</span></div><div class="line"><span class="meta">*** 1,3 ****</span></div><div class="line"><span class="meta">--- 1,9 ----</span></div><div class="line"><span class="addition">+ This is an important</span></div><div class="line"><span class="addition">+ notice! It should</span></div><div class="line"><span class="addition">+ therefore be located at</span></div><div class="line"><span class="addition">+ the beginning of this</span></div><div class="line"><span class="addition">+ document!</span></div><div class="line"></div><div class="line"><span class="addition">! compress the size of the</span></div><div class="line"><span class="addition">! changes.</span></div><div class="line"></div><div class="line">  It is important to spell</div></pre></td></tr></table></figure>
+<h2 id="Java"><a href="#Java" class="headerlink" title="Java"></a>Java</h2><figure class="highlight java"><table><tr><td class="code"><pre><div class="line"><span class="comment">/**</span></div><div class="line"><span class="comment"> * <span class="doctag">@author</span> John Smith &lt;john.smith@example.com&gt;</span></div><div class="line"><span class="comment">*/</span></div><div class="line"><span class="keyword">package</span> l2f.gameserver.model;</div><div class="line"></div><div class="line"><span class="keyword">public</span> <span class="keyword">abstract</span> <span class="class"><span class="keyword">class</span> <span class="title">L2Char</span> <span class="keyword">extends</span> <span class="title">L2Object</span> </span>&#123;</div><div class="line">  <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> Short ERROR = <span class="number">0x0001</span>;</div><div class="line"></div><div class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">moveTo</span><span class="params">(<span class="keyword">int</span> x, <span class="keyword">int</span> y, <span class="keyword">int</span> z)</span> </span>&#123;</div><div class="line">    _ai = <span class="keyword">null</span>;</div><div class="line">    log(<span class="string">"Should not be called"</span>);</div><div class="line">    <span class="keyword">if</span> (<span class="number">1</span> &gt; <span class="number">5</span>) &#123; <span class="comment">// wtf!?</span></div><div class="line">      <span class="keyword">return</span>;</div><div class="line">    &#125;</div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h2 id="Javascript"><a href="#Javascript" class="headerlink" title="Javascript"></a>Javascript</h2><figure class="highlight javascript"><table><tr><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> $initHighlight(<span class="params">block, cls</span>) </span>&#123;</div><div class="line">  <span class="keyword">try</span> &#123;</div><div class="line">    <span class="keyword">if</span> (cls.search(<span class="regexp">/\bno\-highlight\b/</span>) != <span class="number">-1</span>)</div><div class="line">      <span class="keyword">return</span> process(block, <span class="literal">true</span>, <span class="number">0x0F</span>) +</div><div class="line">             <span class="string">` class="<span class="subst">$&#123;cls&#125;</span>"`</span>;</div><div class="line">  &#125; <span class="keyword">catch</span> (e) &#123;</div><div class="line">    <span class="comment">/* handle exception */</span></div><div class="line">  &#125;</div><div class="line">  <span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span> / <span class="number">2</span>; i &lt; classes.length; i++) &#123;</div><div class="line">    <span class="keyword">if</span> (checkCondition(classes[i]) === <span class="literal">undefined</span>)</div><div class="line">      <span class="built_in">console</span>.log(<span class="string">'undefined'</span>);</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="keyword">export</span> $initHighlight;</div></pre></td></tr></table></figure>
+<h2 id="Python"><a href="#Python" class="headerlink" title="Python"></a>Python</h2><figure class="highlight python"><table><tr><td class="code"><pre><div class="line"><span class="meta">@requires_authorization</span></div><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">somefunc</span><span class="params">(param1=<span class="string">''</span>, param2=<span class="number">0</span>)</span>:</span></div><div class="line">    <span class="string">r'''A docstring'''</span></div><div class="line">    <span class="keyword">if</span> param1 &gt; param2: <span class="comment"># interesting</span></div><div class="line">        <span class="keyword">print</span> <span class="string">'Gre\'ater'</span></div><div class="line">    <span class="keyword">return</span> (param2 - param1 + <span class="number">1</span> + <span class="number">0b10l</span>) <span class="keyword">or</span> <span class="keyword">None</span></div><div class="line"></div><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">SomeClass</span>:</span></div><div class="line">    <span class="keyword">pass</span></div><div class="line"></div><div class="line"><span class="meta">&gt;&gt;&gt; </span>message = <span class="string">'''interpreter</span></div><div class="line"><span class="string"><span class="meta">... </span>prompt'''</span></div></pre></td></tr></table></figure>
+<h2 id="HTML-XML"><a href="#HTML-XML" class="headerlink" title="HTML, XML"></a>HTML, XML</h2><figure class="highlight html"><table><tr><td class="code"><pre><div class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">title</span>&gt;</span>Title<span class="tag">&lt;/<span class="name">title</span>&gt;</span></div><div class="line"></div><div class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="css"><span class="selector-tag">body</span> &#123;<span class="attribute">width</span>: <span class="number">500px</span>;&#125;</span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></div><div class="line"></div><div class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"application/javascript"</span>&gt;</span><span class="undefined"></span></div><div class="line"><span class="javascript">  <span class="function"><span class="keyword">function</span> $init(<span class="params"></span>) </span>&#123;<span class="keyword">return</span> <span class="literal">true</span>;&#125;</span></div><div class="line"><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line"></div><div class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">p</span> <span class="attr">checked</span> <span class="attr">class</span>=<span class="string">"title"</span> <span class="attr">id</span>=<span class="string">'title'</span>&gt;</span>Title<span class="tag">&lt;/<span class="name">p</span>&gt;</span></div><div class="line">  <span class="comment">&lt;!-- here goes the rest of the page --&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></div></pre></td></tr></table></figure>
+
+  </section>
+  <footer class="footer">
+    <section class="">
+  <time class="date meta" datetime="2017-08-20T16:58:34.000Z">
+    Aug 20, 2017
+  </time>
+</section>
+
+    
+<section class="categories">
+  
+    <a class="category meta" href="/hexo-theme-agnes/categories/example/">
+      example
+    </a>
+  
+</section>
+
+
+    
+<section class="tags">
+  
+    <a class="tag meta" href="/hexo-theme-agnes/tags/highlight/">
+      highlight
+    </a>
+  
+</section>
+
+
+  </footer>
+</article>
+
+
+
+
+  
+
+
+     
+   </section>
+  </main>
+  <footer class="site-footer">
+  <section class="footer-wrap container">
+    <p class="copyright">
+      &copy; 
+      
+      2017
+      Giuem
+    </p>
+    <p class="powered">
+      Theme Agnes with <span class="i-love"></span>
+    </p>
+  </section>
+</footer>
+
+</body>
+</html>

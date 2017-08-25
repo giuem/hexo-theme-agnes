@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Agnes</title>
+  <subtitle>A minimal theme</subtitle>
+  <link href="/hexo-theme-agnes/atom.xml" rel="self"/>
+  
+  <link href="https://giuem.github.io/hexo-theme-agnes/"/>
+  <updated>2017-08-25T10:21:21.404Z</updated>
+  <id>https://giuem.github.io/hexo-theme-agnes/</id>
+  
+  <author>
+    <name>Giuem</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Typography</title>
+    <link href="https://giuem.github.io/hexo-theme-agnes/2017/08/20/typography/"/>
+    <id>https://giuem.github.io/hexo-theme-agnes/2017/08/20/typography/</id>
+    <published>2017-08-20T16:59:32.000Z</published>
+    <updated>2017-08-25T10:21:21.404Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;This post is for typography test.&lt;br&gt;
+    
+    </summary>
+    
+      <category term="example" scheme="https://giuem.github.io/hexo-theme-agnes/categories/example/"/>
+    
+    
+      <category term="typography" scheme="https://giuem.github.io/hexo-theme-agnes/tags/typography/"/>
+    
+      <category term="markdown" scheme="https://giuem.github.io/hexo-theme-agnes/tags/markdown/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Tag Plugins</title>
+    <link href="https://giuem.github.io/hexo-theme-agnes/2017/08/20/tag-plugins/"/>
+    <id>https://giuem.github.io/hexo-theme-agnes/2017/08/20/tag-plugins/</id>
+    <published>2017-08-20T16:59:23.000Z</published>
+    <updated>2017-08-25T10:21:21.404Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;This post is for tag plugins test.&lt;br&gt;
+    
+    </summary>
+    
+      <category term="example" scheme="https://giuem.github.io/hexo-theme-agnes/categories/example/"/>
+    
+    
+      <category term="tag plugins" scheme="https://giuem.github.io/hexo-theme-agnes/tags/tag-plugins/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Highlight</title>
+    <link href="https://giuem.github.io/hexo-theme-agnes/2017/08/20/highlight/"/>
+    <id>https://giuem.github.io/hexo-theme-agnes/2017/08/20/highlight/</id>
+    <published>2017-08-20T16:58:34.000Z</published>
+    <updated>2017-08-25T10:21:21.404Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;This post is for highlight.js test.&lt;br&gt;
+    
+    </summary>
+    
+      <category term="example" scheme="https://giuem.github.io/hexo-theme-agnes/categories/example/"/>
+    
+    
+      <category term="highlight" scheme="https://giuem.github.io/hexo-theme-agnes/tags/highlight/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Images</title>
+    <link href="https://giuem.github.io/hexo-theme-agnes/2017/08/20/images/"/>
+    <id>https://giuem.github.io/hexo-theme-agnes/2017/08/20/images/</id>
+    <published>2017-08-20T16:58:17.000Z</published>
+    <updated>2017-08-25T10:21:21.404Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;This post is for images test.&lt;br&gt;
+    
+    </summary>
+    
+      <category term="image" scheme="https://giuem.github.io/hexo-theme-agnes/categories/image/"/>
+    
+    
+      <category term="example" scheme="https://giuem.github.io/hexo-theme-agnes/tags/example/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>中文测试</title>
+    <link href="https://giuem.github.io/hexo-theme-agnes/2017/08/20/chinese/"/>
+    <id>https://giuem.github.io/hexo-theme-agnes/2017/08/20/chinese/</id>
+    <published>2017-08-20T16:58:09.000Z</published>
+    <updated>2017-08-25T10:21:21.404Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;奇一和集回配位這舞怕中球裡&quot;&gt;&lt;a href=&quot;#奇一和集回配位這舞怕中球裡&quot; class=&quot;headerlink&quot; title=&quot;奇一和集回配位這舞怕中球裡&quot;&gt;&lt;/a&gt;奇一和集回配位這舞怕中球裡&lt;/h2&gt;&lt;p&gt;經須三一股不東有是實決無去球聲門必要！驚們微坐。我公
+    
+    </summary>
+    
+      <category term="example" scheme="https://giuem.github.io/hexo-theme-agnes/categories/example/"/>
+    
+    
+      <category term="chinese" scheme="https://giuem.github.io/hexo-theme-agnes/tags/chinese/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>日本語テスト</title>
+    <link href="https://giuem.github.io/hexo-theme-agnes/2017/08/20/japanese/"/>
+    <id>https://giuem.github.io/hexo-theme-agnes/2017/08/20/japanese/</id>
+    <published>2017-08-20T16:58:02.000Z</published>
+    <updated>2017-08-25T10:21:21.404Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;私は今まあその附与家としてものの所で行っありた。いよいよ一番を乱暴らはもう大した下宿だでばかりをしているででしか蹂躙通っますなて、どうには罹りたたですない。肴を射したものはすこぶる当時であたかもますですた。&lt;/p&gt;
+&lt;p&gt;もっとも大森さんを指図地震こう誤解に云っます主義この
+    
+    </summary>
+    
+      <category term="example" scheme="https://giuem.github.io/hexo-theme-agnes/categories/example/"/>
+    
+    
+      <category term="japanese" scheme="https://giuem.github.io/hexo-theme-agnes/tags/japanese/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="https://giuem.github.io/hexo-theme-agnes/2017/08/20/hello-world/"/>
+    <id>https://giuem.github.io/hexo-theme-agnes/2017/08/20/hello-world/</id>
+    <published>2017-08-20T15:59:23.000Z</published>
+    <updated>2017-08-25T10:21:21.404Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
+    
+    </summary>
+    
+    
+  </entry>
+  
+</feed>
